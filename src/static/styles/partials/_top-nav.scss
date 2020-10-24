@@ -1,0 +1,21 @@
+.top-nav {
+	svg {
+		.b {
+			fill: #a3abb7;
+			stroke-width: 0.3px;
+			transition: all 0.4s;
+		}
+		.c {
+			fill: #a3abb7;
+			transition: all 0.4s;
+		}
+
+		&:hover {
+			cursor: pointer;
+
+			path {
+				fill: #666f7c;
+			}
+		}
+	}
+}

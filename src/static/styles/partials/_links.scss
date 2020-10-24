@@ -1,0 +1,21 @@
+a.active {
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+a.black-link {
+	color: black;
+	font-size: 10px;
+	// font-weight: bold;
+}
+
+a.grey-link {
+	@extend a.black-link;
+	color: $grey-text-color;
+}
+
+@media screen and (max-width: 768px) {
+	a.black-link {
+		font-size: 13px;
+	}
+}

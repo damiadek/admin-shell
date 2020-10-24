@@ -1,0 +1,29 @@
+.example-enter {
+	opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+	opacity: 1;
+	transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+	display: none;
+	opacity: 1;
+}
+
+.example-leave.example-leave-active {
+	display: none;
+	opacity: 0.01;
+	// transition: opacity 300ms ease-in;
+}
+
+.fade-enter {
+	opacity: 0;
+	z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+	opacity: 1;
+	transition: opacity 250ms ease-in;
+}

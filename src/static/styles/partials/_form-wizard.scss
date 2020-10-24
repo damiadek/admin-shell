@@ -1,0 +1,60 @@
+.create-outlet-form,
+.fund-wallet-form {
+	.ant-steps-item-container {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.ant-steps-item-content {
+		text-align: center;
+		min-height: 45px;
+	}
+
+	.ant-steps-dot .ant-steps-item-tail {
+		top: 82%;
+		margin: 0 0 0 14px;
+		width: 97%;
+	}
+
+	.ant-steps-dot .ant-steps-item-process .ant-steps-item-icon,
+	.ant-steps-dot .ant-steps-item-icon {
+		width: 20px;
+		height: 20px;
+		margin-left: 0;
+	}
+
+	.ant-steps-item-wait
+		.ant-steps-item-icon
+		> .ant-steps-icon
+		.ant-steps-icon-dot {
+		background: transparent;
+		border: solid 2px #dddddd;
+	}
+
+	.ant-steps-item-process,
+	.ant-steps-item-finish {
+		.ant-steps-item-icon > .ant-steps-icon .ant-steps-icon-dot,
+		.ant-steps-item-icon > .ant-steps-icon .ant-steps-icon-dot {
+			background: black;
+		}
+	}
+
+	.ant-steps-item-finish {
+		.ant-steps-item-container > .ant-steps-item-tail::after {
+			background: lighten($color: $accent-color, $amount: 30);
+		}
+	}
+
+	.ant-steps
+		.ant-steps-item:not(.ant-steps-item-active)
+		> .ant-steps-item-container[role="button"]:hover,
+	.ant-steps-item-finish {
+		.ant-steps-item-subtitle {
+			color: #444444;
+		}
+	}
+
+	.ant-steps-item-title {
+		text-align: left;
+	}
+}

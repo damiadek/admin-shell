@@ -1,0 +1,28 @@
+// @import url("https://fonts.googleapis.com/css?family=Muli:200,400,400i,700,800&display=swap");
+@import url("https://use.typekit.net/jkv5qjh.css");
+
+* {
+	font-family: "Muli", sans-serif;
+	font-weight: 400;
+}
+
+@import "~tailwindcss/base";
+@import "~tailwindcss/components";
+@import "~tailwindcss/utilities";
+
+@import "./partials/variables";
+
+@import "./partials/size";
+@import "./partials/colors";
+@import "./partials/inputs";
+
+@import "./partials/animations";
+@import "./partials/position";
+@import "./partials/links";
+@import "./partials/buttons";
+
+@import "./partials/sidebar";
+@import "./partials/top-nav";
+@import "./partials/tables";
+@import "./partials/card";
+@import "./partials/form-wizard";

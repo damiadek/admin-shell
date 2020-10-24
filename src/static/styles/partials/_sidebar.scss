@@ -1,0 +1,85 @@
+.sidebar {
+	.ant-menu-item {
+		padding-left: 24px;
+		line-height: 35px;
+		height: 35px;
+
+		&.ant-menu-item-selected {
+			background: none;
+
+			&::after {
+				opacity: 0;
+			}
+		}
+
+		svg {
+			height: 19px;
+		}
+
+		& > a {
+			display: flex;
+			align-content: center;
+
+			svg {
+				transition: fill 1s;
+			}
+
+			svg .a {
+				fill: $nav-link-color;
+			}
+
+			svg .b {
+				fill: darken($nav-link-color, 10);
+			}
+
+			span {
+				font-size: 12px;
+				// padding-top: 5px;
+				color: $nav-link-color;
+				transition: color 1s;
+			}
+
+			&:hover {
+				color: inherit;
+
+				svg .a {
+					fill: darken($nav-link-color, 10);
+				}
+
+				svg .b {
+					fill: darken($nav-link-color, 20);
+				}
+
+				span {
+					color: darken($color: $nav-link-color, $amount: 25);
+				}
+			}
+
+			&::before {
+				content: " ";
+				border: solid 3px transparent;
+				position: absolute;
+				right: 0;
+				top: 22%;
+				height: 60%;
+				transition: border-color 1s;
+			}
+		}
+
+		& > a.active {
+			font-weight: 400;
+
+			svg .b {
+				fill: $accent-color;
+			}
+
+			span {
+				color: $accent-color;
+			}
+
+			&::before {
+				border-right-color: $accent-color;
+			}
+		}
+	}
+}
